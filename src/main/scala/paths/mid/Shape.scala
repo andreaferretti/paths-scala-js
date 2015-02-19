@@ -7,6 +7,6 @@ import low.Path
 
 
 trait Shape extends js.Object {
-  def path(): Path = js.native
-  def centroid(): Point = js.native
+  val path: Path = js.native
+  val centroid: Point = js.native
 }
