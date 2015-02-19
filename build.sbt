@@ -1,6 +1,8 @@
 // Turn this project into a Scala.js project by importing these settings
 enablePlugins(ScalaJSPlugin)
 
+organization := "eu.unicredit"
+
 name := "paths-scala-js"
 
 version := "0.3.2"
