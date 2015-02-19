@@ -6,7 +6,11 @@ Paths.scala.js
 Documentation
 -------------
 
-The bindings are complete, but there is not much in terms of documentation or examples yet. You can refer to [the documentation of Paths.js](https://github.com/andreaferretti/paths-js/wiki), or explore the [Scaladocs API](http://andreaferretti.github.io/paths-scala-js).
+The usage of Paths.scala.js is mostly similar to its parent library. You can
+
+- browse the [documentation of Paths.js](https://github.com/andreaferretti/paths-js/wiki)
+- explore the [Scaladocs API](http://andreaferretti.github.io/paths-scala-js)
+- see an [example application](https://github.com/andreaferretti/paths-scala-js-demo)
 
 Usage
 -----
@@ -28,4 +32,4 @@ The next steps are:
 
 - publish Paths.js on webjars
 - publish Paths.scala.js on Maven central
-- make an example application
+- add more examples to the demo application
