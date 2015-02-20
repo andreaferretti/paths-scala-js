@@ -10,7 +10,7 @@ The usage of Paths.scala.js is mostly similar to its parent library. You can
 
 - browse the [documentation of Paths.js](https://github.com/andreaferretti/paths-js/wiki)
 - explore the [Scaladocs API](http://andreaferretti.github.io/paths-scala-js)
-- see an [example application](https://github.com/andreaferretti/paths-scala-js-demo)
+- see an [example application](https://github.com/andreaferretti/paths-scala-js-demo) ([live demo](http://andreaferretti.github.io/paths-scala-js-demo/))
 
 Usage
 -----
