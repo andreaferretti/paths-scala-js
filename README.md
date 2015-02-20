@@ -12,6 +12,8 @@ The usage of Paths.scala.js is mostly similar to its parent library. You can
 - explore the [Scaladocs API](http://andreaferretti.github.io/paths-scala-js)
 - see an [example application](https://github.com/andreaferretti/paths-scala-js-demo) ([live demo](http://andreaferretti.github.io/paths-scala-js-demo/))
 
+The demo application is still incomplete, and fails to show many of Paths.scala.js features. The [Paths.js demo](http://andreaferretti.github.io/paths-js-demo/) better showcases what can be done.
+
 Usage
 -----
 
