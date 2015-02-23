@@ -25,13 +25,15 @@ This will publish the artifact locally, for Scala 2.11 with Scala.js 0.6. In ano
 
     libraryDependencies += "eu.unicredit" %%% "paths-scala-js" % "0.3.2"
 
-You will also need to link to the [global build](https://github.com/andreaferretti/paths-js/tree/master/dist/global) of Paths.js - which contains the library as a single script - inside your HTML file.
+You will also need to depend on the original JS library, which is available on Webjars:
+
+    jsDependencies += "org.webjars" % "paths-js" % "0.3.2" / "paths.js"
+
 
 To do
 -----
 
 The next steps are:
 
-- publish Paths.js on webjars
 - publish Paths.scala.js on Maven central
 - add more examples to the demo application
