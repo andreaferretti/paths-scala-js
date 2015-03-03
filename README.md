@@ -17,13 +17,11 @@ The demo application is still incomplete, and fails to show many of Paths.scala.
 Usage
 -----
 
-Paths.scala.js is not published yet. In order to use it, clone this repository, then
+Paths.scala.js is published on the Sonatype snapshots repository, for Scala 2.11 with Scala.js 0.6. In a Scala.js project, you can depend on Paths.scala.js with
 
-    sbt publishLocal
+    resolvers += "Sonatype snapshots" at "https://oss.sonatype.org/content/repositories/snapshots"
 
-This will publish the artifact locally, for Scala 2.11 with Scala.js 0.6. In another Scala.js project, you can then depend on this artifact with
-
-    libraryDependencies += "eu.unicredit" %%% "paths-scala-js" % "0.3.2"
+    libraryDependencies += "eu.unicredit" %%% "paths-scala-js" % "0.3.2-SNAPSHOT"
 
 You will also need to depend on the original JS library, which is available on Webjars:
 
@@ -39,7 +37,4 @@ Please, file any other incompatibility between Paths.js and Paths.scala.js as an
 To do
 -----
 
-The next steps are:
-
-- publish Paths.scala.js on Maven central
-- add more examples to the demo application
+Add more examples to the demo application
