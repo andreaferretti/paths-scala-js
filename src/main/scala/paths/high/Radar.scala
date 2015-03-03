@@ -5,8 +5,7 @@ import scala.scalajs.js
 import js.annotation.JSName
 import js.JSConverters._
 
-import low.Path
-import mid.SemiRegularPolygon
+import mid.{ Shape, SemiRegularPolygon }
 
 
 trait RadarOpts[A] extends js.Object {
@@ -44,7 +43,7 @@ trait RadarCurve[A] extends js.Object {
 
 trait Radar[A] extends js.Object {
   val curves: js.Array[RadarCurve[A]] = js.native
-  val rings: js.Array[Path] = js.native
+  val rings: js.Array[Shape] = js.native
 }
 
 object Radar {
