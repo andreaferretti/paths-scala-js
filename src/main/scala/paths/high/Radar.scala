@@ -49,7 +49,7 @@ trait Radar[A] extends js.Object {
 
 object Radar {
   def apply[A](data: Seq[A], accessor: Map[String, A => Double], max: Option[Double] = None,
-    center: (Double, Double), r: Double, rings: Int) = {
+    center: (Double, Double), r: Double, rings: Int = 3) = {
     // val d = data.toJSArray.asInstanceOf[js.Array[Any]]
     // val acc = accessor mapValues { f => (x: Any) => f(x.asInstanceOf[A]) }
     val acc: Map[String, js.Function1[A, Double]] = accessor mapValues { x => x }
