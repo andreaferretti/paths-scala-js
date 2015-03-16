@@ -59,6 +59,7 @@ trait SankeyNode[V] extends js.Object {
   val curve: Rectangle = js.native
   val item: V = js.native
   val index: Int = js.native
+  val group: Int = js.native
 }
 
 trait Sankey[V, E] extends js.Object {
