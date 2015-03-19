@@ -17,12 +17,9 @@ The demo application is still incomplete, and fails to show many of Paths.scala.
 Usage
 -----
 
-Paths.scala.js is published on the Sonatype snapshots repository, for Scala 2.11 with Scala.js 0.6. In a Scala.js project, you can depend on Paths.scala.js with
+Paths.scala.js is published for Scala 2.11 with Scala.js 0.6. In a Scala.js project, you can depend on Paths.scala.js with
 
-    resolvers += "Sonatype snapshots" at
-      "https://oss.sonatype.org/content/repositories/snapshots"
-
-    libraryDependencies += "eu.unicredit" %%% "paths-scala-js" % "0.3.2-SNAPSHOT"
+    libraryDependencies += "eu.unicredit" %%% "paths-scala-js" % "0.3.2"
 
 You will also need to depend on the original JS library, which is available on Webjars:
 

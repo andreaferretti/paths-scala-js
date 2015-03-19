@@ -9,7 +9,7 @@ organization := "eu.unicredit"
 
 name := "paths-scala-js"
 
-version := "0.3.2-SNAPSHOT"
+version := "0.3.2"
 
 scalaVersion := "2.11.5"
 
@@ -34,3 +34,25 @@ publishMavenStyle := true
 pomIncludeRepository := { x => false }
 
 credentials += Credentials(Path.userHome / ".ivy2" / "sonatype.credentials")
+
+pomExtra := {
+  <url>https://github.com/andreaferretti/paths-scala-js</url>
+  <licenses>
+    <license>
+      <name>Apache 2</name>
+      <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+    </license>
+  </licenses>
+  <scm>
+    <connection>scm:git:github.com/andreaferretti/paths-scala-js</connection>
+    <developerConnection>scm:git:git@github.com:andreaferretti/paths-scala-js</developerConnection>
+    <url>github.com/andreaferretti/paths-scala-js</url>
+  </scm>
+  <developers>
+    <developer>
+      <id>andreaferretti</id>
+      <name>Andrea Ferretti</name>
+      <url>https://github.com/andreaferretti/</url>
+    </developer>
+  </developers>
+}
