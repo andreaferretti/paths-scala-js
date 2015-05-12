@@ -40,7 +40,7 @@ object StockNative extends js.Object {
 trait StockCurve[A] extends js.Object {
   val line: Polygon = js.native
   val area: Polygon = js.native
-  val item: A = js.native
+  val item: js.Array[A] = js.native
   val index: Int = js.native
 }
 
