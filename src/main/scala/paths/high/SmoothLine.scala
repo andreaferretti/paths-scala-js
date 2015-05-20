@@ -40,7 +40,7 @@ object SmoothLineNative extends js.Object {
 trait SmoothLineCurve[A] extends js.Object {
   val line: Shape = js.native
   val area: Shape = js.native
-  val item: A = js.native
+  val item: js.Array[A] = js.native
   val index: Int = js.native
 }
 
