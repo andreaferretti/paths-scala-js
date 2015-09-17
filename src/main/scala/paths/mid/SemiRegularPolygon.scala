@@ -6,6 +6,7 @@ import js.annotation.JSName
 import js.JSConverters._
 
 
+@js.native
 trait SemiRegularPolygonOpts extends js.Object {
   val center: Point = js.native
   val radii: js.Array[Double] = js.native
@@ -19,12 +20,13 @@ object SemiRegularPolygonOpts {
     ).asInstanceOf[SemiRegularPolygonOpts]
 }
 
+@js.native
 @JSName("paths.SemiRegularPolygon")
 object SemiRegularPolygonNative extends js.Object {
   def apply(options: SemiRegularPolygonOpts): SemiRegularPolygon = js.native
 }
 
-
+@js.native
 trait SemiRegularPolygon extends Shape
 
 object SemiRegularPolygon {

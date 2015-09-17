@@ -9,6 +9,7 @@ import mid.Shape
 import misc.Linear
 
 
+@js.native
 trait SmoothLineOpts[A] extends js.Object {
   val data: js.Array[js.Array[A]] = js.native
   val xaccessor: js.Function1[A, Double] = js.native
@@ -32,11 +33,13 @@ object SmoothLineOpts {
     ).asInstanceOf[SmoothLineOpts[A]]
 }
 
+@js.native
 @JSName("paths.SmoothLine")
 object SmoothLineNative extends js.Object {
   def apply[A](options: SmoothLineOpts[A]): SmoothLine[A] = js.native
 }
 
+@js.native
 trait SmoothLineCurve[A] extends js.Object {
   val line: Shape = js.native
   val area: Shape = js.native
@@ -44,6 +47,7 @@ trait SmoothLineCurve[A] extends js.Object {
   val index: Int = js.native
 }
 
+@js.native
 trait SmoothLine[A] extends js.Object {
   val curves: js.Array[SmoothLineCurve[A]] = js.native
   val xscale: Linear = js.native

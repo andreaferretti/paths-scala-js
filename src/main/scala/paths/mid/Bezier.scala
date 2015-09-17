@@ -5,7 +5,7 @@ import scala.scalajs.js
 import js.annotation.JSName
 import js.JSConverters._
 
-
+@js.native
 trait BezierOpts extends js.Object {
   val points: js.Array[Point] = js.native
   val tension: Double = js.native
@@ -19,11 +19,13 @@ object BezierOpts {
     ).asInstanceOf[BezierOpts]
 }
 
+@js.native
 @JSName("paths.Bezier")
 object BezierNative extends js.Object {
   def apply(options: BezierOpts): Bezier = js.native
 }
 
+@js.native
 trait Bezier extends Shape
 
 object Bezier {

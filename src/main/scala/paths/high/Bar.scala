@@ -8,6 +8,7 @@ import js.JSConverters._
 import mid.Rectangle
 
 
+@js.native
 trait BarOpts[A] extends js.Object {
   val data: js.Array[js.Array[A]] = js.native
   val accessor: js.Function1[A, Double] = js.native
@@ -28,17 +29,20 @@ object BarOpts {
     ).asInstanceOf[BarOpts[A]]
 }
 
+@js.native
 @JSName("paths.Bar")
 object BarNative extends js.Object {
   def apply[A](options: BarOpts[A]): Bar[A] = js.native
 }
 
+@js.native
 trait BarCurve[A] extends js.Object {
   val line: Rectangle = js.native
   val item: A = js.native
   val index: Int = js.native
 }
 
+@js.native
 trait Bar[A] extends js.Object {
   val curves: js.Array[BarCurve[A]] = js.native
 }

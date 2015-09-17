@@ -6,6 +6,7 @@ import js.annotation.JSName
 import js.JSConverters._
 
 
+@js.native
 trait PolygonOpts extends js.Object {
   val points: js.Array[Point] = js.native
   val closed: Boolean = js.native
@@ -19,11 +20,13 @@ object PolygonOpts {
     ).asInstanceOf[PolygonOpts]
 }
 
+@js.native
 @JSName("paths.Polygon")
 object PolygonNative extends js.Object {
   def apply(options: PolygonOpts): Polygon = js.native
 }
 
+@js.native
 trait Polygon extends Shape
 
 object Polygon {

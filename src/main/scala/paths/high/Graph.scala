@@ -8,17 +8,20 @@ import js.JSConverters._
 import mid.Polygon
 
 
+@js.native
 trait GraphData[V, E] extends js.Object {
   val nodes: js.Array[V] = js.native
   val links: js.Array[E] = js.native
 }
 
+@js.native
 trait GraphEdge extends js.Object {
   val start: String = js.native
   val end: String = js.native
   val weight: Double = js.native
 }
 
+@js.native
 trait GraphOpts[V, E] extends js.Object {
   val data: GraphData[V, E] = js.native
   val nodeaccessor: js.Function1[V, String] = js.native
@@ -46,22 +49,26 @@ object GraphOpts {
     ).asInstanceOf[GraphOpts[V, E]]
 }
 
+@js.native
 @JSName("paths.Graph")
 object GraphNative extends js.Object {
   def apply[V, E](options: GraphOpts[V, E]): Graph[V, E] = js.native
 }
 
+@js.native
 trait GraphCurve[E] extends js.Object {
   val link: Polygon = js.native
   val item: E = js.native
   val index: Int = js.native
 }
 
+@js.native
 trait GraphNode[V] extends js.Object {
   val point: Point = js.native
   val item: V = js.native
 }
 
+@js.native
 trait Graph[V, E] extends js.Object {
   var curves: js.Array[GraphCurve[E]] = js.native
   var nodes: js.Array[GraphNode[V]] = js.native

@@ -6,6 +6,7 @@ import js.annotation.JSName
 import js.JSConverters._
 
 
+@js.native
 trait CurvedRectangleOpts extends js.Object {
   val topleft: Point = js.native
   val topright: Point = js.native
@@ -23,11 +24,13 @@ object CurvedRectangleOpts {
     ).asInstanceOf[CurvedRectangleOpts]
 }
 
+@js.native
 @JSName("paths.CurvedRectangle")
 object CurvedRectangleNative extends js.Object {
   def apply(options: CurvedRectangleOpts): CurvedRectangle = js.native
 }
 
+@js.native
 trait CurvedRectangle extends Shape
 
 object CurvedRectangle {

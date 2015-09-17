@@ -8,6 +8,7 @@ import js.JSConverters._
 import mid.Rectangle
 
 
+@js.native
 trait WaterfallItem extends js.Object {
   val value: js.UndefOr[Double] = js.native
   val absolute: js.UndefOr[Boolean] = js.native
@@ -18,6 +19,7 @@ trait WaterfallScalaItem {
   def absolute: Boolean
 }
 
+@js.native
 trait WaterfallOpts[A] extends js.Object {
   val data: js.Array[A] = js.native
   val accessor: js.Function1[A, WaterfallItem] = js.native
@@ -43,11 +45,13 @@ object WaterfallOpts {
     ).asInstanceOf[WaterfallOpts[A]]
 }
 
+@js.native
 @JSName("paths.Waterfall")
 object WaterfallNative extends js.Object {
   def apply[A](options: WaterfallOpts[A]): Waterfall[A] = js.native
 }
 
+@js.native
 trait WaterfallCurve[A] extends js.Object {
   val line: Rectangle = js.native
   val value: Double = js.native
@@ -55,6 +59,7 @@ trait WaterfallCurve[A] extends js.Object {
   val index: Int = js.native
 }
 
+@js.native
 trait Waterfall[A] extends js.Object {
   val curves: js.Array[WaterfallCurve[A]] = js.native
 }

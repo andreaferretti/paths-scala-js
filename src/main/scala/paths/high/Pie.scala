@@ -8,6 +8,7 @@ import js.JSConverters._
 import mid.Sector
 
 
+@js.native
 trait PieOpts[A] extends js.Object {
   val data: js.Array[A] = js.native
   val accessor: js.Function1[A, Double] = js.native
@@ -28,17 +29,20 @@ object PieOpts {
     ).asInstanceOf[PieOpts[A]]
 }
 
+@js.native
 @JSName("paths.Pie")
 object PieNative extends js.Object {
   def apply[A](options: PieOpts[A]): Pie[A] = js.native
 }
 
+@js.native
 trait PieCurve[A] extends js.Object {
   val sector: Sector = js.native
   val item: A = js.native
   val index: Int = js.native
 }
 
+@js.native
 trait Pie[A] extends js.Object {
   val curves: js.Array[PieCurve[A]] = js.native
 }

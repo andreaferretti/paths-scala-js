@@ -8,6 +8,7 @@ import js.JSConverters._
 import mid.{ Shape, SemiRegularPolygon }
 
 
+@js.native
 trait RadarOpts[A] extends js.Object {
   val data: js.Array[A] = js.native
   val accessor: Map[String, js.Function1[A, Double]] = js.native
@@ -30,17 +31,20 @@ object RadarOpts {
     ).asInstanceOf[RadarOpts[A]]
 }
 
+@js.native
 @JSName("paths.Radar")
 object RadarNative extends js.Object {
   def apply[A](options: RadarOpts[A]): Radar[A] = js.native
 }
 
+@js.native
 trait RadarCurve[A] extends js.Object {
   val polygon: SemiRegularPolygon = js.native
   val item: A = js.native
   val index: Int = js.native
 }
 
+@js.native
 trait Radar[A] extends js.Object {
   val curves: js.Array[RadarCurve[A]] = js.native
   val rings: js.Array[Shape] = js.native

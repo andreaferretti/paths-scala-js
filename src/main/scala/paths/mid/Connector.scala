@@ -6,6 +6,7 @@ import js.annotation.JSName
 import js.JSConverters._
 
 
+@js.native
 trait ConnectorOpts extends js.Object {
   val start: Point = js.native
   val end: Point = js.native
@@ -19,11 +20,13 @@ object ConnectorOpts {
     ).asInstanceOf[ConnectorOpts]
 }
 
+@js.native
 @JSName("paths.Connector")
 object ConnectorNative extends js.Object {
   def apply(options: ConnectorOpts): Connector = js.native
 }
 
+@js.native
 trait Connector extends Shape
 
 object Connector {

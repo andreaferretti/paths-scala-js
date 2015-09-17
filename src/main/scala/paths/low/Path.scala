@@ -4,6 +4,7 @@ package low
 import scala.scalajs.js
 import scala.scalajs.js.annotation.JSName
 
+@js.native
 trait Path extends js.Object {
   def print(): String = js.native
   def points(): js.Array[Point] = js.native
@@ -21,6 +22,7 @@ trait Path extends js.Object {
   def closepath(): Path = js.native
 }
 
+@js.native
 @JSName("paths.Path")
 object Path extends js.Object {
   def apply(): Path = js.native

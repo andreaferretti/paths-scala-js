@@ -6,6 +6,7 @@ import js.annotation.JSName
 import js.JSConverters._
 
 
+@js.native
 trait RectangleOpts extends js.Object {
   val top: Double = js.native
   val bottom: Double = js.native
@@ -23,11 +24,13 @@ object RectangleOpts {
     ).asInstanceOf[RectangleOpts]
 }
 
+@js.native
 @JSName("paths.Rectangle")
 object RectangleNative extends js.Object {
   def apply(options: RectangleOpts): Rectangle = js.native
 }
 
+@js.native
 trait Rectangle extends Shape
 
 object Rectangle {

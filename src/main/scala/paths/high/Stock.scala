@@ -9,6 +9,7 @@ import mid.Polygon
 import misc.Linear
 
 
+@js.native
 trait StockOpts[A] extends js.Object {
   val data: js.Array[js.Array[A]] = js.native
   val xaccessor: js.Function1[A, Double] = js.native
@@ -32,11 +33,13 @@ object StockOpts {
     ).asInstanceOf[StockOpts[A]]
 }
 
+@js.native
 @JSName("paths.Stock")
 object StockNative extends js.Object {
   def apply[A](options: StockOpts[A]): Stock[A] = js.native
 }
 
+@js.native
 trait StockCurve[A] extends js.Object {
   val line: Polygon = js.native
   val area: Polygon = js.native
@@ -44,6 +47,7 @@ trait StockCurve[A] extends js.Object {
   val index: Int = js.native
 }
 
+@js.native
 trait Stock[A] extends js.Object {
   val curves: js.Array[StockCurve[A]] = js.native
   val xscale: Linear = js.native

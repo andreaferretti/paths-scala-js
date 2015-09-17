@@ -6,6 +6,7 @@ import js.annotation.JSName
 import js.JSConverters._
 
 
+@js.native
 trait SectorOpts extends js.Object {
   val center: Point = js.native
   val r: Double = js.native
@@ -25,11 +26,13 @@ object SectorOpts {
     ).asInstanceOf[SectorOpts]
 }
 
+@js.native
 @JSName("paths.Sector")
 object SectorNative extends js.Object {
   def apply(options: SectorOpts): Sector = js.native
 }
 
+@js.native
 trait Sector extends Shape
 
 object Sector {

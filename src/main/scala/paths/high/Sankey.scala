@@ -8,17 +8,20 @@ import js.JSConverters._
 import mid.{ CurvedRectangle, Rectangle }
 
 
+@js.native
 trait SankeyData[V, E] extends js.Object {
   val nodes: js.Array[js.Array[V]] = js.native
   val links: js.Array[E] = js.native
 }
 
+@js.native
 trait SankeyEdge extends js.Object {
   val start: String = js.native
   val end: String = js.native
   val weight: Double = js.native
 }
 
+@js.native
 trait SankeyOpts[V, E] extends js.Object {
   val data: SankeyData[V, E] = js.native
   val nodeaccessor: js.Function1[V, String] = js.native
@@ -44,17 +47,20 @@ object SankeyOpts {
     ).asInstanceOf[SankeyOpts[V, E]]
 }
 
+@js.native
 @JSName("paths.Sankey")
 object SankeyNative extends js.Object {
   def apply[V, E](options: SankeyOpts[V, E]): Sankey[V, E] = js.native
 }
 
+@js.native
 trait SankeyCurve[E] extends js.Object {
   val curve: CurvedRectangle = js.native
   val item: E = js.native
   val index: Int = js.native
 }
 
+@js.native
 trait SankeyNode[V] extends js.Object {
   val curve: Rectangle = js.native
   val item: V = js.native
@@ -62,6 +68,7 @@ trait SankeyNode[V] extends js.Object {
   val group: Int = js.native
 }
 
+@js.native
 trait Sankey[V, E] extends js.Object {
   var curvedRectangles: js.Array[SankeyCurve[E]] = js.native
   var rectangles: js.Array[SankeyNode[V]] = js.native
