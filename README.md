@@ -28,6 +28,6 @@ You will also need to depend on the original JS library, which is available on W
 Compatibility
 -------------
 
-Paths.scala.js is meant to have an API that is exactly equivalent to its parent library. The only exception is in the `Graph` and `Sankey` charts, where instead of accepting a parameter `data` with `nodes` and `links` fields, the Scala.js API directly requires `nodes` and `links` parameters. This removes one leve of nesting and eliminates the need for structural typing in this particular case.
+Paths.scala.js is meant to have an API that is exactly equivalent to its parent library. The only exception is in the `Graph` and `Sankey` charts, where instead of accepting a parameter `data` with `nodes` and `links` fields, the Scala.js API directly requires `nodes` and `links` parameters. This removes one level of nesting and eliminates the need for structural typing in this particular case.
 
 Please, file any other incompatibility between Paths.js and Paths.scala.js as an issue.
