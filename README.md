@@ -19,11 +19,11 @@ Usage
 
 Paths.scala.js is published for Scala 2.11 with Scala.js 0.6. In a Scala.js project, you can depend on Paths.scala.js with
 
-    libraryDependencies += "eu.unicredit" %%% "paths-scala-js" % "0.3.2"
+    libraryDependencies += "eu.unicredit" %%% "paths-scala-js" % "0.4.0"
 
 You will also need to depend on the original JS library, which is available on Webjars:
 
-    jsDependencies += "org.webjars" % "paths-js" % "0.3.2" / "paths.js"
+    jsDependencies += "org.webjars" % "paths-js" % "0.4.0" / "paths.js"
 
 Compatibility
 -------------
