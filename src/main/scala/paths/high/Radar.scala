@@ -32,7 +32,7 @@ object RadarOpts {
 }
 
 @js.native
-@JSName("paths.Radar")
+@JSName("Paths.Radar")
 object RadarNative extends js.Object {
   def apply[A](options: RadarOpts[A]): Radar[A] = js.native
 }

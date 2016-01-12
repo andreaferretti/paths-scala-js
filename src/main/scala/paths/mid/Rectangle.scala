@@ -25,7 +25,7 @@ object RectangleOpts {
 }
 
 @js.native
-@JSName("paths.Rectangle")
+@JSName("Paths.Rectangle")
 object RectangleNative extends js.Object {
   def apply(options: RectangleOpts): Rectangle = js.native
 }

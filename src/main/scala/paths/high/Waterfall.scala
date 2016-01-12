@@ -46,7 +46,7 @@ object WaterfallOpts {
 }
 
 @js.native
-@JSName("paths.Waterfall")
+@JSName("Paths.Waterfall")
 object WaterfallNative extends js.Object {
   def apply[A](options: WaterfallOpts[A]): Waterfall[A] = js.native
 }

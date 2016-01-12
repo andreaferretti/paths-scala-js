@@ -27,7 +27,7 @@ object SectorOpts {
 }
 
 @js.native
-@JSName("paths.Sector")
+@JSName("Paths.Sector")
 object SectorNative extends js.Object {
   def apply(options: SectorOpts): Sector = js.native
 }

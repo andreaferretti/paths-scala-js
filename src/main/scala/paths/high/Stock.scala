@@ -34,7 +34,7 @@ object StockOpts {
 }
 
 @js.native
-@JSName("paths.Stock")
+@JSName("Paths.Stock")
 object StockNative extends js.Object {
   def apply[A](options: StockOpts[A]): Stock[A] = js.native
 }

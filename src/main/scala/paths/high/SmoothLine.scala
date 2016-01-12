@@ -34,7 +34,7 @@ object SmoothLineOpts {
 }
 
 @js.native
-@JSName("paths.SmoothLine")
+@JSName("Paths.SmoothLine")
 object SmoothLineNative extends js.Object {
   def apply[A](options: SmoothLineOpts[A]): SmoothLine[A] = js.native
 }

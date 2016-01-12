@@ -28,7 +28,7 @@ object TreeOpts {
 }
 
 @js.native
-@JSName("paths.Tree")
+@JSName("Paths.Tree")
 object TreeNative extends js.Object {
   def apply[A](options: TreeOpts[A]): Tree[A] = js.native
 }

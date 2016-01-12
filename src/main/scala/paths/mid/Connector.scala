@@ -21,7 +21,7 @@ object ConnectorOpts {
 }
 
 @js.native
-@JSName("paths.Connector")
+@JSName("Paths.Connector")
 object ConnectorNative extends js.Object {
   def apply(options: ConnectorOpts): Connector = js.native
 }

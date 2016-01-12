@@ -20,7 +20,7 @@ object BezierOpts {
 }
 
 @js.native
-@JSName("paths.Bezier")
+@JSName("Paths.Bezier")
 object BezierNative extends js.Object {
   def apply(options: BezierOpts): Bezier = js.native
 }

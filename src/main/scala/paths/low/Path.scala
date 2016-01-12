@@ -18,12 +18,12 @@ trait Path extends js.Object {
   def smoothcurveto(x2: Number, y2: Number, x: Number, y: Number): Path = js.native
   def qcurveto(x1: Number, y1: Number, x: Number, y: Number): Path = js.native
   def smoothqcurveto(x: Number, y: Number): Path = js.native
-  def arc(rx: Number, ry: Number, xrot: Number, large_arc_flag: Number, sweep_flag: Number, x: Number, y: Number): Path = js.native
+  def arc(rx: Number, ry: Number, xrot: Number, largeArcFlag: Number, sweepFlag: Number, x: Number, y: Number): Path = js.native
   def closepath(): Path = js.native
 }
 
 @js.native
-@JSName("paths.Path")
+@JSName("Paths.Path")
 object Path extends js.Object {
   def apply(): Path = js.native
 }

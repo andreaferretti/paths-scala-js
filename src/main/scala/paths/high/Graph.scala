@@ -50,7 +50,7 @@ object GraphOpts {
 }
 
 @js.native
-@JSName("paths.Graph")
+@JSName("Paths.Graph")
 object GraphNative extends js.Object {
   def apply[V, E](options: GraphOpts[V, E]): Graph[V, E] = js.native
 }

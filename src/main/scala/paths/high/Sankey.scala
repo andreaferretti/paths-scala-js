@@ -48,7 +48,7 @@ object SankeyOpts {
 }
 
 @js.native
-@JSName("paths.Sankey")
+@JSName("Paths.Sankey")
 object SankeyNative extends js.Object {
   def apply[V, E](options: SankeyOpts[V, E]): Sankey[V, E] = js.native
 }

@@ -30,7 +30,7 @@ object PieOpts {
 }
 
 @js.native
-@JSName("paths.Pie")
+@JSName("Paths.Pie")
 object PieNative extends js.Object {
   def apply[A](options: PieOpts[A]): Pie[A] = js.native
 }

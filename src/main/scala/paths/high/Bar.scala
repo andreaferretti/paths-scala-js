@@ -30,7 +30,7 @@ object BarOpts {
 }
 
 @js.native
-@JSName("paths.Bar")
+@JSName("Paths.Bar")
 object BarNative extends js.Object {
   def apply[A](options: BarOpts[A]): Bar[A] = js.native
 }

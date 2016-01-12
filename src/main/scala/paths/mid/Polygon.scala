@@ -21,7 +21,7 @@ object PolygonOpts {
 }
 
 @js.native
-@JSName("paths.Polygon")
+@JSName("Paths.Polygon")
 object PolygonNative extends js.Object {
   def apply(options: PolygonOpts): Polygon = js.native
 }

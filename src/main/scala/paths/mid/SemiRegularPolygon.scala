@@ -21,7 +21,7 @@ object SemiRegularPolygonOpts {
 }
 
 @js.native
-@JSName("paths.SemiRegularPolygon")
+@JSName("Paths.SemiRegularPolygon")
 object SemiRegularPolygonNative extends js.Object {
   def apply(options: SemiRegularPolygonOpts): SemiRegularPolygon = js.native
 }
