@@ -9,7 +9,7 @@ organization := "eu.unicredit"
 
 name := "paths-scala-js"
 
-version := "0.4.0"
+version := "0.4.2"
 
 scalaVersion := "2.11.7"
 
@@ -19,7 +19,7 @@ persistLauncher in Test := false
 
 testFrameworks += new TestFramework("utest.runner.Framework")
 
-jsDependencies += "org.webjars.bower" % "paths-js" % "0.4.0" / "paths.js"
+jsDependencies += "org.webjars.bower" % "paths-js" % "0.4.2" / "paths.js"
 
 skip in packageJSDependencies := false
 
