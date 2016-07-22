@@ -6,7 +6,7 @@ import js.annotation.JSName
 import js.JSConverters._
 
 import mid.Rectangle
-
+import misc.Linear
 
 @js.native
 trait BarOpts[A] extends js.Object {
@@ -46,6 +46,7 @@ trait BarCurve[A] extends js.Object {
 @js.native
 trait Bar[A] extends js.Object {
   val curves: js.Array[BarCurve[A]] = js.native
+  val scale: Linear = js.native
 }
 
 object Bar {
