@@ -15,17 +15,19 @@ trait BarOpts[A] extends js.Object {
   val width: Int = js.native
   val height: Int = js.native
   val gutter: Int = js.native
+  val offset: js.Array[Double] = js.native
 }
 
 object BarOpts {
   def apply[A](data: js.Array[js.Array[A]], accessor: js.Function1[A, Double],
-      width: Int, height: Int, gutter: Int): BarOpts[A] =
+      width: Int, height: Int, gutter: Int, offset: js.Array[Double]): BarOpts[A] =
     js.Dynamic.literal(
       data = data,
       accessor = accessor,
       width = width,
       height = height,
-      gutter = gutter
+      gutter = gutter,
+      offset = offset
     ).asInstanceOf[BarOpts[A]]
 }
 
@@ -50,8 +52,8 @@ trait Bar[A] extends js.Object {
 }
 
 object Bar {
-  def apply[A](data: Seq[Seq[A]], accessor: A => Double, width: Int, height: Int, gutter: Int) = {
+  def apply[A](data: Seq[Seq[A]], accessor: A => Double, width: Int, height: Int, gutter: Int, offset: (Double, Double)) = {
     val d = data.toJSArray.map(_.toJSArray)
-    BarNative(BarOpts(d, accessor, width, height, gutter))
+    BarNative(BarOpts(d, accessor, width, height, gutter, tuple2point(offset)))
   }
 }

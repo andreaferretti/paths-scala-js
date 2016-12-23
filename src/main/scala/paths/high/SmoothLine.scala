@@ -17,19 +17,21 @@ trait SmoothLineOpts[A] extends js.Object {
   val width: Int = js.native
   val height: Int = js.native
   val closed: Boolean = js.native
+  val sort: Boolean = js.native
 }
 
 object SmoothLineOpts {
   def apply[A](data: js.Array[js.Array[A]], xaccessor: js.Function1[A, Double],
       yaccessor: js.Function1[A, Double], width: Int, height: Int,
-      closed: Boolean = false): SmoothLineOpts[A] =
+      closed: Boolean = false, sort: Boolean = true): SmoothLineOpts[A] =
     js.Dynamic.literal(
       data = data,
       xaccessor = xaccessor,
       yaccessor = yaccessor,
       width = width,
       height = height,
-      closed = closed
+      closed = closed,
+      sort = sort
     ).asInstanceOf[SmoothLineOpts[A]]
 }
 
@@ -56,8 +58,8 @@ trait SmoothLine[A] extends js.Object {
 
 object SmoothLine {
   def apply[A](data: Seq[Seq[A]], xaccessor: A => Double, yaccessor: A => Double,
-    width: Int, height: Int, closed: Boolean = false) = {
+    width: Int, height: Int, closed: Boolean = false, sort: Boolean = true) = {
     val d = data.toJSArray.map(_.toJSArray)
-    SmoothLineNative(SmoothLineOpts(d, xaccessor, yaccessor, width, height, closed))
+    SmoothLineNative(SmoothLineOpts(d, xaccessor, yaccessor, width, height, closed, sort))
   }
 }
