@@ -52,7 +52,7 @@ trait Bar[A] extends js.Object {
 }
 
 object Bar {
-  def apply[A](data: Seq[Seq[A]], accessor: A => Double, width: Int, height: Int, gutter: Int, offset: (Double, Double)) = {
+  def apply[A](data: Seq[Seq[A]], accessor: A => Double, width: Int, height: Int, gutter: Int, offset: (Double, Double) = (0, 0)) = {
     val d = data.toJSArray.map(_.toJSArray)
     BarNative(BarOpts(d, accessor, width, height, gutter, tuple2point(offset)))
   }
