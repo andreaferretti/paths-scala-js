@@ -17,9 +17,9 @@ The demo application is still incomplete, and fails to show many of Paths.scala.
 Usage
 -----
 
-Paths.scala.js is published for Scala 2.11 with Scala.js 0.6. In a Scala.js project, you can depend on Paths.scala.js with
+Paths.scala.js is published for Scala 2.11 and Scala 2.12 with Scala.js 0.6. In a Scala.js project, you can depend on Paths.scala.js with
 
-    libraryDependencies += "eu.unicredit" %%% "paths-scala-js" % "0.4.4"
+    libraryDependencies += "eu.unicredit" %%% "paths-scala-js" % "0.4.5"
 
 Compatibility
 -------------

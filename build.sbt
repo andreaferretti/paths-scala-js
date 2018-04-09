@@ -1,7 +1,3 @@
-import SonatypeKeys._
-
-sonatypeSettings
-
 // Turn this project into a Scala.js project by importing these settings
 enablePlugins(ScalaJSPlugin)
 
@@ -11,11 +7,13 @@ name := "paths-scala-js"
 
 version := "0.4.5"
 
-scalaVersion := "2.11.7"
+scalaVersion := "2.12.4"
 
-persistLauncher in Compile := true
+crossScalaVersions := Seq("2.11.7", "2.12.4")
 
-persistLauncher in Test := false
+scalaJSUseMainModuleInitializer in Compile := true
+
+scalaJSUseMainModuleInitializer in Test := false
 
 testFrameworks += new TestFramework("utest.runner.Framework")
 
