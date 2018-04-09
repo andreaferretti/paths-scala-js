@@ -1,5 +1,5 @@
-addSbtPlugin("org.scala-js" % "sbt-scalajs" % "0.6.5")
+addSbtPlugin("org.scala-js" % "sbt-scalajs" % "0.6.22")
 
-addSbtPlugin("org.xerial.sbt" % "sbt-sonatype" % "0.2.2")
+addSbtPlugin("org.xerial.sbt" % "sbt-sonatype" % "2.0")
 
-addSbtPlugin("com.typesafe.sbt" % "sbt-pgp" % "0.8.3")
+addSbtPlugin("com.jsuereth" % "sbt-pgp" % "1.1.0")
