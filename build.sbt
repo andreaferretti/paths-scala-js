@@ -31,6 +31,8 @@ publishMavenStyle := true
 
 pomIncludeRepository := { x => false }
 
+publishTo := sonatypePublishTo.value
+
 credentials += Credentials(Path.userHome / ".ivy2" / "sonatype.credentials")
 
 pomExtra := {
