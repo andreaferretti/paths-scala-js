@@ -2,7 +2,7 @@ package paths
 package high
 
 import scala.scalajs.js
-import js.annotation.JSName
+import js.annotation.JSGlobal
 import js.JSConverters._
 
 import mid.{ CurvedRectangle, Rectangle }
@@ -48,7 +48,7 @@ object SankeyOpts {
 }
 
 @js.native
-@JSName("Paths.Sankey")
+@JSGlobal("Paths.Sankey")
 object SankeyNative extends js.Object {
   def apply[V, E](options: SankeyOpts[V, E]): Sankey[V, E] = js.native
 }

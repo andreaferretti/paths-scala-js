@@ -2,7 +2,7 @@ package paths
 package mid
 
 import scala.scalajs.js
-import js.annotation.JSName
+import js.annotation.JSGlobal
 import js.JSConverters._
 
 
@@ -27,7 +27,7 @@ object SectorOpts {
 }
 
 @js.native
-@JSName("Paths.Sector")
+@JSGlobal("Paths.Sector")
 object SectorNative extends js.Object {
   def apply(options: SectorOpts): Sector = js.native
 }

@@ -2,7 +2,7 @@ package paths
 package low
 
 import scala.scalajs.js
-import scala.scalajs.js.annotation.JSName
+import scala.scalajs.js.annotation.JSGlobal
 
 @js.native
 trait Path extends js.Object {
@@ -23,7 +23,7 @@ trait Path extends js.Object {
 }
 
 @js.native
-@JSName("Paths.Path")
+@JSGlobal("Paths.Path")
 object Path extends js.Object {
   def apply(): Path = js.native
 }

@@ -2,7 +2,7 @@ package paths
 package high
 
 import scala.scalajs.js
-import js.annotation.JSName
+import js.annotation.JSGlobal
 import js.JSConverters._
 
 import mid.Rectangle
@@ -46,7 +46,7 @@ object WaterfallOpts {
 }
 
 @js.native
-@JSName("Paths.Waterfall")
+@JSGlobal("Paths.Waterfall")
 object WaterfallNative extends js.Object {
   def apply[A](options: WaterfallOpts[A]): Waterfall[A] = js.native
 }

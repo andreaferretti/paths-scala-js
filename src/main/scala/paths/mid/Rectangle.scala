@@ -2,7 +2,7 @@ package paths
 package mid
 
 import scala.scalajs.js
-import js.annotation.JSName
+import js.annotation.JSGlobal
 import js.JSConverters._
 
 
@@ -25,7 +25,7 @@ object RectangleOpts {
 }
 
 @js.native
-@JSName("Paths.Rectangle")
+@JSGlobal("Paths.Rectangle")
 object RectangleNative extends js.Object {
   def apply(options: RectangleOpts): Rectangle = js.native
 }

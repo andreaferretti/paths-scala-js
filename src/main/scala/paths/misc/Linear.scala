@@ -2,10 +2,10 @@ package paths
 package misc
 
 import scala.scalajs.js
-import js.annotation.JSName
+import js.annotation.JSGlobal
 
 @js.native
-@JSName("Paths.Linear")
+@JSGlobal("Paths.Linear")
 object LinearNative extends js.Object {
   def apply(source: js.Array[Double], target: js.Array[Double]): Linear = js.native
 }

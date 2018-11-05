@@ -2,7 +2,7 @@ package paths
 package high
 
 import scala.scalajs.js
-import js.annotation.JSName
+import js.annotation.JSGlobal
 import js.JSConverters._
 
 import mid.Polygon
@@ -50,7 +50,7 @@ object GraphOpts {
 }
 
 @js.native
-@JSName("Paths.Graph")
+@JSGlobal("Paths.Graph")
 object GraphNative extends js.Object {
   def apply[V, E](options: GraphOpts[V, E]): Graph[V, E] = js.native
 }

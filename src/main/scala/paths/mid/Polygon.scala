@@ -2,7 +2,7 @@ package paths
 package mid
 
 import scala.scalajs.js
-import js.annotation.JSName
+import js.annotation.JSGlobal
 import js.JSConverters._
 
 
@@ -21,7 +21,7 @@ object PolygonOpts {
 }
 
 @js.native
-@JSName("Paths.Polygon")
+@JSGlobal("Paths.Polygon")
 object PolygonNative extends js.Object {
   def apply(options: PolygonOpts): Polygon = js.native
 }

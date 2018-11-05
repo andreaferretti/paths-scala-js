@@ -2,7 +2,7 @@ package paths
 package high
 
 import scala.scalajs.js
-import js.annotation.JSName
+import js.annotation.JSGlobal
 import js.JSConverters._
 
 import mid.Sector
@@ -32,7 +32,7 @@ object VoronoiOpts {
 }
 
 @js.native
-@JSName("Paths.Voronoi")
+@JSGlobal("Paths.Voronoi")
 object VoronoiNative extends js.Object {
   def apply[A](options: VoronoiOpts[A]): Voronoi[A] = js.native
 }

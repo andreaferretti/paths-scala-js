@@ -2,7 +2,7 @@ package paths
 package mid
 
 import scala.scalajs.js
-import js.annotation.JSName
+import js.annotation.JSGlobal
 import js.JSConverters._
 
 
@@ -25,7 +25,7 @@ object CurvedRectangleOpts {
 }
 
 @js.native
-@JSName("Paths.CurvedRectangle")
+@JSGlobal("Paths.CurvedRectangle")
 object CurvedRectangleNative extends js.Object {
   def apply(options: CurvedRectangleOpts): CurvedRectangle = js.native
 }

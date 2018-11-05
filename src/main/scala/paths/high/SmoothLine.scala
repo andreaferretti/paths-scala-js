@@ -2,7 +2,7 @@ package paths
 package high
 
 import scala.scalajs.js
-import js.annotation.JSName
+import js.annotation.JSGlobal
 import js.JSConverters._
 
 import mid.Shape
@@ -36,7 +36,7 @@ object SmoothLineOpts {
 }
 
 @js.native
-@JSName("Paths.SmoothLine")
+@JSGlobal("Paths.SmoothLine")
 object SmoothLineNative extends js.Object {
   def apply[A](options: SmoothLineOpts[A]): SmoothLine[A] = js.native
 }

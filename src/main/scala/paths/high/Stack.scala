@@ -2,7 +2,7 @@ package paths
 package high
 
 import scala.scalajs.js
-import js.annotation.JSName
+import js.annotation.JSGlobal
 import js.JSConverters._
 
 import mid.Rectangle
@@ -30,7 +30,7 @@ object StackOpts {
 }
 
 @js.native
-@JSName("Paths.Stack")
+@JSGlobal("Paths.Stack")
 object StackNative extends js.Object {
   def apply[A](options: StackOpts[A]): Stack[A] = js.native
 }

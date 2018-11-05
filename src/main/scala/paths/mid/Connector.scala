@@ -2,7 +2,7 @@ package paths
 package mid
 
 import scala.scalajs.js
-import js.annotation.JSName
+import js.annotation.JSGlobal
 import js.JSConverters._
 
 
@@ -21,7 +21,7 @@ object ConnectorOpts {
 }
 
 @js.native
-@JSName("Paths.Connector")
+@JSGlobal("Paths.Connector")
 object ConnectorNative extends js.Object {
   def apply(options: ConnectorOpts): Connector = js.native
 }

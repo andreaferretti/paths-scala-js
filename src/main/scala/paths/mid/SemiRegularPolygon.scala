@@ -2,7 +2,7 @@ package paths
 package mid
 
 import scala.scalajs.js
-import js.annotation.JSName
+import js.annotation.JSGlobal
 import js.JSConverters._
 
 
@@ -21,7 +21,7 @@ object SemiRegularPolygonOpts {
 }
 
 @js.native
-@JSName("Paths.SemiRegularPolygon")
+@JSGlobal("Paths.SemiRegularPolygon")
 object SemiRegularPolygonNative extends js.Object {
   def apply(options: SemiRegularPolygonOpts): SemiRegularPolygon = js.native
 }

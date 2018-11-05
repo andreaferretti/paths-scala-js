@@ -2,7 +2,7 @@ package paths
 package high
 
 import scala.scalajs.js
-import js.annotation.JSName
+import js.annotation.JSGlobal
 import js.JSConverters._
 
 import mid.Connector
@@ -28,7 +28,7 @@ object TreeOpts {
 }
 
 @js.native
-@JSName("Paths.Tree")
+@JSGlobal("Paths.Tree")
 object TreeNative extends js.Object {
   def apply[A](options: TreeOpts[A]): Tree[A] = js.native
 }

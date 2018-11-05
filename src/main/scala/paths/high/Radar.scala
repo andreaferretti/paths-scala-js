@@ -2,7 +2,7 @@ package paths
 package high
 
 import scala.scalajs.js
-import js.annotation.JSName
+import js.annotation.JSGlobal
 import js.JSConverters._
 
 import mid.{ Shape, SemiRegularPolygon }
@@ -32,7 +32,7 @@ object RadarOpts {
 }
 
 @js.native
-@JSName("Paths.Radar")
+@JSGlobal("Paths.Radar")
 object RadarNative extends js.Object {
   def apply[A](options: RadarOpts[A]): Radar[A] = js.native
 }

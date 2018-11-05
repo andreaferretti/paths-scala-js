@@ -2,7 +2,7 @@ package paths
 package high
 
 import scala.scalajs.js
-import js.annotation.JSName
+import js.annotation.JSGlobal
 import js.JSConverters._
 
 import mid.Sector
@@ -30,7 +30,7 @@ object PieOpts {
 }
 
 @js.native
-@JSName("Paths.Pie")
+@JSGlobal("Paths.Pie")
 object PieNative extends js.Object {
   def apply[A](options: PieOpts[A]): Pie[A] = js.native
 }

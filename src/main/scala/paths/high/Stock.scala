@@ -2,7 +2,7 @@ package paths
 package high
 
 import scala.scalajs.js
-import js.annotation.JSName
+import js.annotation.JSGlobal
 import js.JSConverters._
 
 import mid.Polygon
@@ -36,7 +36,7 @@ object StockOpts {
 }
 
 @js.native
-@JSName("Paths.Stock")
+@JSGlobal("Paths.Stock")
 object StockNative extends js.Object {
   def apply[A](options: StockOpts[A]): Stock[A] = js.native
 }

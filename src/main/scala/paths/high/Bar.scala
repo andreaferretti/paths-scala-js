@@ -2,9 +2,8 @@ package paths
 package high
 
 import scala.scalajs.js
-import js.annotation.JSName
+import js.annotation.{JSGlobal, JSName}
 import js.JSConverters._
-
 import mid.Rectangle
 import misc.Linear
 
@@ -32,7 +31,7 @@ object BarOpts {
 }
 
 @js.native
-@JSName("Paths.Bar")
+@JSGlobal("Paths.Bar")
 object BarNative extends js.Object {
   def apply[A](options: BarOpts[A]): Bar[A] = js.native
 }

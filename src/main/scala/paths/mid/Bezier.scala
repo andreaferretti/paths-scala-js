@@ -2,7 +2,7 @@ package paths
 package mid
 
 import scala.scalajs.js
-import js.annotation.JSName
+import js.annotation.JSGlobal
 import js.JSConverters._
 
 @js.native
@@ -20,7 +20,7 @@ object BezierOpts {
 }
 
 @js.native
-@JSName("Paths.Bezier")
+@JSGlobal("Paths.Bezier")
 object BezierNative extends js.Object {
   def apply(options: BezierOpts): Bezier = js.native
 }
